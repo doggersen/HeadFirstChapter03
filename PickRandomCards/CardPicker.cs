@@ -8,10 +8,15 @@ namespace PickRandomCards
 {
     class CardPicker
     {
+
+        //object "random" created. we can now use "random" to create random numbers
         static Random random = new Random();
 
+        //method with a return type "string[]", meaning it needs a string returned. Since its an array, it can have many returned.
+        //numberOfCards is the number that the user inputs
         public static string[] PickSomeCards(int numberOfCards)
         {
+            //making an array. the nu
             string[] pickedCards = new string[numberOfCards];
             for (int i = 0; i < numberOfCards; i++)
             {
