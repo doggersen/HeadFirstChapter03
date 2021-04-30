@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PickRandomCards
 {
+    //summary:
+    //the methods u call in this class "PickSomeCards" returns an array of random cards, and the amount is based on "numberOfCards" that the user put in as an argument to the method.
     class CardPicker
     {
 
@@ -16,12 +14,14 @@ namespace PickRandomCards
         //numberOfCards is the number that the user inputs
         public static string[] PickSomeCards(int numberOfCards)
         {
-            //making an array. the nu
+            //declaring af single-dimensional array. the numberOfCards defines the length of the array (how many array elements does it consist of)
             string[] pickedCards = new string[numberOfCards];
+            //loop that gives string values to all the elements of the array
             for (int i = 0; i < numberOfCards; i++)
-            {
-                pickedCards[i] = RandomValue() + " of " + RandomSuit();
+            {//"pickedCards[i]" gets 
+                pickedCards[i] = RandomValue() + " of " + RandomSuit(); //the string consist mainly of the random results from other two methods
             }
+            //returns the array "pickedCards" "filled up" with string elements.
             return pickedCards;
         }
 
