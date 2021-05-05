@@ -12,16 +12,16 @@ namespace PickRandomCards
             //if user input can be converted to int then do the following..
             if (int.TryParse(line, out int numberCards))
             {
-                                                                                    //My own solution (the solution from the book was simpler):
-                                                                                    //string[] results = CardPicker.PickSomeCards(numberOfCards);
-                                                                                    //int count = 0;
+                //My own solution (the solution from the book was simpler):
+                //string[] results = CardPicker.PickSomeCards(numberOfCards);
+                //int count = 0;
                 //calling the PickSomeCards method, and inputting the user input
                 foreach (string card in CardPicker.PickSomeCards(numberCards))
                 {
                     Console.WriteLine(card);
 
-                                                                                    //Console.WriteLine(results[count]);
-                                                                                    //count++;
+                    //Console.WriteLine(results[count]);
+                    //count++;
                 }
             }
             else

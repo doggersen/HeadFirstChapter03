@@ -8,7 +8,7 @@ namespace PickACardUI
     {
 
         //object "random" created. we can now use "random" to create random numbers
-        
+
         /// <summary>
         /// this is an XML-comment. in this case its just a field called random, that is of type Random
         /// </summary>
@@ -17,7 +17,7 @@ namespace PickACardUI
         //method with a return type "string[]", meaning it needs a string returned. Since its an array, it can have many returned.
         //numberOfCards is the number that the user inputs
         //the below xml-comments makes a much better and more "official" explanation of what the method does
-       
+
         /// <summary>
         /// Picks a number of cards and returns them
         /// </summary>

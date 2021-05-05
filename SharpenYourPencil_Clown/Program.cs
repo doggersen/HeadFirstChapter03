@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SharpenYourPencil_Clown
+﻿namespace SharpenYourPencil_Clown
 {
     class Program
     {
