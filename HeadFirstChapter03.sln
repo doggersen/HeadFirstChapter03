@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpenYourPencil_Clown", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_BobJoe", "Exercise_BobJoe\Exercise_BobJoe.csproj", "{5907E7D7-CFB6-45FE-B929-BC80E43B5F4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_BettingGame", "Exercise_BettingGame\Exercise_BettingGame.csproj", "{105FEB7F-8FBA-4951-A93F-340B6E9F8628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5907E7D7-CFB6-45FE-B929-BC80E43B5F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5907E7D7-CFB6-45FE-B929-BC80E43B5F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5907E7D7-CFB6-45FE-B929-BC80E43B5F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105FEB7F-8FBA-4951-A93F-340B6E9F8628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105FEB7F-8FBA-4951-A93F-340B6E9F8628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105FEB7F-8FBA-4951-A93F-340B6E9F8628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105FEB7F-8FBA-4951-A93F-340B6E9F8628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
