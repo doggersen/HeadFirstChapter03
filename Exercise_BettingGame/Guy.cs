@@ -5,7 +5,7 @@ namespace Exercise_BettingGame
     class Guy
     {
         public string Name;
-        public int Cash;
+        public int Cash = 100;
 
 
         public void WriteMyInfo()

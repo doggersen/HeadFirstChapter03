@@ -18,46 +18,47 @@ namespace Exercise_BettingGame
             for (int i = 0; i < amountOfPlayers; i++)
             {
                 players[i] = new Guy();
-                
+
                 Console.WriteLine($"what is the name of player {i} ?");
                 string nameOfPlayer = Console.ReadLine();
                 players[i].Name = nameOfPlayer;
 
             }
-            
+
             Console.WriteLine("here is a list of the players:");
             for (int i = 0; i < amountOfPlayers; i++)
             {
-                Console.WriteLine(players[i].Name);    
+                Console.WriteLine(players[i].Name);
             }
 
 
 
-                Console.WriteLine("what is your name?");
-
 
             while (true)
             {
-                Console.WriteLine("The Player has: " + player.Cash + " bucks");
-                Console.WriteLine("How much money do you want to bet?");
-                string howMuch = Console.ReadLine();
+                for (int i = 0; i < amountOfPlayers; i++)
+                {
 
-                if(int.TryParse(howMuch, out int amount))
-                {                    
-                    int pot = amount *2 ;
+                    Console.WriteLine($"{players[i].Name} it is your turn! you have {players[i].Cash} bucks");
+                    Console.WriteLine("How much money do you want to bet?");
+                    string howMuch = Console.ReadLine();
 
-                    double randomNumber = random.NextDouble();
-                    if (randomNumber > odds)
+                    if (int.TryParse(howMuch, out int amount))
                     {
-                        player.ReceiveCash(amount);
-                    }
-                    else
-                    {
-                        player.GiveCash(amount);
-                    }
+                        int pot = amount * 2;
 
+                        double randomNumber = random.NextDouble();
+                        if (randomNumber > odds)
+                        {
+                            players[i].ReceiveCash(amount);
+                        }
+                        else
+                        {
+                            players[i].GiveCash(amount);
+                        }
+
+                    }
                 }
-
             }
 
         }
