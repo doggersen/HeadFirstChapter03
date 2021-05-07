@@ -10,7 +10,31 @@ namespace Exercise_BettingGame
             double odds = 0.75;
             Guy player = new Guy() { Name = "The Player", Cash = 100 };
 
+
             Console.WriteLine("welcome player, to the betting game! the odds are 0.75");
+            Console.WriteLine("How many players?");
+            int amountOfPlayers = Convert.ToInt32(Console.ReadLine());
+            var players = new Guy[amountOfPlayers];
+            for (int i = 0; i < amountOfPlayers; i++)
+            {
+                players[i] = new Guy();
+                
+                Console.WriteLine($"what is the name of player {i} ?");
+                string nameOfPlayer = Console.ReadLine();
+                players[i].Name = nameOfPlayer;
+
+            }
+            
+            Console.WriteLine("here is a list of the players:");
+            for (int i = 0; i < amountOfPlayers; i++)
+            {
+                Console.WriteLine(players[i].Name);    
+            }
+
+
+
+                Console.WriteLine("what is your name?");
+
 
             while (true)
             {
