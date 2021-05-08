@@ -2,7 +2,7 @@
 
 namespace Exercise_BettingGame
 {
-    class Guy
+    class Player
     {
         public string Name;
         public int Cash = 100;
