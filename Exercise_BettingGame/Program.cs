@@ -6,6 +6,7 @@ namespace Exercise_BettingGame
     {
         static void Main(string[] args)
         {
+
             Random random = new Random();
             double odds = 0;
             double difficultyMultiplier = 0;
